@@ -1,6 +1,6 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'golang:1.18' } }
+    agent { docker { image 'golang:1.18'; label 'master' } }
 
     parameters {
 //         string description: 'specify credentials id', name: 'CREDS', trim: true
